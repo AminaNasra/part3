@@ -50,3 +50,17 @@ fs.writeFile(filePath, data, (err) => {
     console.log("file was written successfuly!");
   }
 });
+
+// readFile function call
+console.log("Reading text from a file");
+fs.readFile(filePath, (err, fileText) => {
+  // check for any errors
+  if (err) {
+    console.error("Error reading the file ", err);
+    return;
+  } else {
+    // output the readFile contents to console
+    console.log("The file contents are: ");
+    console.log(fileText.toString());
+  }
+});
