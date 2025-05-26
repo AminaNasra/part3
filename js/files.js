@@ -33,3 +33,20 @@
   11- END
 
 */
+// Require the file system module
+const fs = require("fs");
+// declare filePath as the path of the file to write
+const filePath = "output.txt";
+// declare our data to be written
+const data = "This is a string that we are going to write to file";
+
+// output writing to file to console
+console.log("Writing to file");
+// writeLine function call
+fs.writeFile(filePath, data, (err) => {
+  if (err) {
+    console.error("Error writing to file:", error);
+  } else {
+    console.log("file was written successfuly!");
+  }
+});
