@@ -33,3 +33,7 @@ console.log(`slicedString: ${slicedString}`);
 // using function substring to get part of a string
 let substringString = anotherString.substring(6, 9);
 console.log(`substring: ${substringString}`);
+
+// changing the myName variable value to upper and lowecase and outputing to screen
+console.log(myName.toUpperCase());
+console.log(myName.toLowerCase());
