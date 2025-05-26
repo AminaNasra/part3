@@ -37,3 +37,19 @@ console.log(`substring: ${substringString}`);
 // changing the myName variable value to upper and lowecase and outputing to screen
 console.log(myName.toUpperCase());
 console.log(myName.toLowerCase());
+
+// using concat method to join two strings
+let greeting = hello.concat(myName);
+console.log(`greeting: ${greeting}`);
+
+// using trim to remove spaces from anotherString
+let trimmedString = anotherString.trim();
+console.log(`trimmedString: ${trimmedString}`);
+
+// using replace method to change "is a" to an empty space in myString
+let newString = myString.replace("is a", "");
+console.log(`newString: ${newString}`);
+
+// using split method to myString using spaces to break the string
+let wordsArray = myString.split(" ");
+console.log(wordsArray);
